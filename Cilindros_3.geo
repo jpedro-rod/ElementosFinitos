@@ -88,3 +88,15 @@ MeshSize {4, 1, 2, 3} = 0.08;
 MeshSize {4, 1, 2, 3} = 0.15;
 //+
 MeshSize {10, 5, 8, 9, 12, 14, 6, 13, 17, 18, 7, 16} = 0.05;
+//+
+Hide "*";
+//+
+Show {
+  Point{7}; Curve{7}; 
+}
+//+
+Show "*";
+//+
+Hide {
+  Point{8}; Point{9}; Point{10}; Point{11}; Point{12}; Point{13}; Point{14}; Point{15}; Point{16}; Point{17}; Point{18}; Point{19}; 
+}
