@@ -1,13 +1,13 @@
 // Gmsh project created on Tue Jan 17 22:59:59 2023
 SetFactory("OpenCASCADE");
 //+
-Point(1) = {0, 0.0, 0, 1.0};
+Point(1) = {0, 0.0, 0, 0.05};
 //+
-Point(2) = {4, 0, 0, 1.0};
+Point(2) = {4, 0, 0, 0.05};
 //+
-Point(3) = {4, 1, 0, 1.0};
+Point(3) = {4, 1, 0, 0.05};
 //+
-Point(4) = {0, 1, 0, 1.0};
+Point(4) = {0, 1, 0, 0.05};
 //+
 Line(1) = {4, 1};
 //+
@@ -55,6 +55,12 @@ Point(18) = {2.85, 0.333, 0, 0.05};
 //+
 Point(19) = {3.15, 0.333, 0, 0.05};
 //+
+Point(20) = {2, 1, 0, 0.05};
+//+
+Point(21) = {1, 0, 0, 0.05};
+//+
+Point(22) = {3, 0, 0, 0.05};
+//+
 Curve Loop(5) = {4, 1, 2, 3};
 //+
 Curve Loop(6) = {5};
@@ -81,22 +87,9 @@ Physical Curve("cilindro3", 15) = {7};
 //+
 Physical Surface("fluido", 16) = {1};
 //+
-MeshSize {4, 1, 2, 3} = 0.8;
-//+
-MeshSize {4, 1, 2, 3} = 0.08;
-//+
-MeshSize {4, 1, 2, 3} = 0.15;
-//+
 MeshSize {10, 5, 8, 9, 12, 14, 6, 13, 17, 18, 7, 16} = 0.05;
 //+
-Hide "*";
 //+
-Show {
-  Point{7}; Curve{7}; 
-}
+MeshSize {12, 13, 6, 14, 9, 5, 10, 8, 18, 17, 7, 16, 22, 21, 20} = 0.05;
 //+
-Show "*";
-//+
-Hide {
-  Point{8}; Point{9}; Point{10}; Point{11}; Point{12}; Point{13}; Point{14}; Point{15}; Point{16}; Point{17}; Point{18}; Point{19}; 
-}
+MeshSize {9, 12, 6, 14, 13, 5, 8, 10, 17, 7, 18, 16, 22, 21, 20} = 0.03;

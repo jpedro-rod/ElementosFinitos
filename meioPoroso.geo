@@ -52,6 +52,6 @@ Physical Line("inferior", 57) = {1};
 Physical Line("superior", 58) = {3};
 Physical Line("esquerda", 59) = {4};
 Physical Line("direita", 60) = {2};
-Physical Line("obstaculo", 62) = {5:nv*nh*4+4};
+Physical Line("obstaculo", 61) = {5:nv*nh*4+4};
 //+
 Physical Surface("surface") = {1};
