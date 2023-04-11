@@ -1,11 +1,10 @@
-
-lc = 0.04; // parede
-le = 0.01; // elipse
+lc = 0.0004; // parede
+le = 0.00001// elipse
 //+
 Point(1) = {0, 0, 0, lc};
-Point(2) = {3.0, 0, 0, lc};
-Point(3) = {3.0, 1, 0, lc};
-Point(4) = {0, 1, 0, lc};
+Point(2) = {0.01, 0, 0, lc};
+Point(3) = {0.01, 0.001, 0, lc};
+Point(4) = {0, 0.001, 0, lc};
 //+
 Line(1) = {1, 2};
 Line(2) = {2, 3};
@@ -13,13 +12,13 @@ Line(3) = {3, 4};
 Line(4) = {4, 1};
 //+
 Curve Loop(1) = {3, 4, 1, 2};
-
-xc = 0.8; // x centro da 1a. elipse
-yc = 0.15+0.05; // y centro da 1a. elipse
-rh = 0.05; // raio horizontal
-rv = 0.05; // raio vertical
-kh = 0.15; // permeabilidade horizontal
-kv = 0.15; // permeabilidade vertical
+//+
+xc = 0.004225+0.00005; // x centro da 1a. elipse
+yc = 0.0008; // y centro da 1a. elipse
+rh = 0.00005; // raio horizontal
+rv = 0.00005; // raio vertical
+kh = 0.00015; // permeabilidade horizontal
+kv = 0.00015; // permeabilidade vertical
 nh = 10; // total de obstaculos horizontais
 nv = 5; // total de obstaculos verticais
 

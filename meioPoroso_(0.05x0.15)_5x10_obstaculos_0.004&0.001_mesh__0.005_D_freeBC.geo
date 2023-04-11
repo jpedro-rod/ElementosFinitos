@@ -61,6 +61,5 @@ Physical Line("obstaculo5",65) = {5+4*nh*4:5*nh*4+4};
   //n = 61+v-1
   //Physical Line("obs"~{v}, n) = {5+(v-1)*nh*4:v*nh*4+4};
 //EndFor
-Physical Line("obstaculo",61) = {5:nv*nh*4+4};
 //+
 Physical Surface("surface") = {1};
