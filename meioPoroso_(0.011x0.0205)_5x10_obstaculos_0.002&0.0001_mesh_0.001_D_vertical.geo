@@ -27,8 +27,8 @@ nv = 5; // total de obstaculos verticais
 
 // elipses horizontais (nh) e verticais (nv)
 count=0;counte=0;countl=2;
-For v In {0:nv-1}
- For h In {0:nh-1}
+For h In {0:nh-1}
+ For v In {0:nv-1}
   //+
   Point(5+count) = {   xc+kh*(h),    yc+kv*(v), 0, le};  // centro da elipse
   Point(6+count) = {xc+rh+kh*(h),    yc+kv*(v), 0, le};  // direita da elipse
@@ -50,18 +50,18 @@ EndFor
 Plane Surface(1) = {1:nh*nv+1};
 
 //+
-Physical Line("inferior", 57) = {1};
-Physical Line("superior", 58) = {3};
-Physical Line("esquerda", 59) = {4};
-Physical Line("direita", 60) = {2};
-Physical Line("obstaculo1",61) = {5+0*nh*4:1*nh*4+4};
-Physical Line("obstaculo2",62) = {5+1*nh*4:2*nh*4+4};
-Physical Line("obstaculo3",63) = {5+2*nh*4:3*nh*4+4};
-Physical Line("obstaculo4",64) = {5+3*nh*4:4*nh*4+4};
-Physical Line("obstaculo5",65) = {5+4*nh*4:5*nh*4+4};
-//For v In {1:nv}
-  //n = 61+v-1
-  //Physical Line("obs"~{v}, n) = {5+(v-1)*nh*4:v*nh*4+4};
-//EndFor
-//+
+Physical Line("inferior", 1) = {1};
+Physical Line("superior", 2) = {3};
+Physical Line("esquerda", 3) = {4};
+Physical Line("direita", 4) = {2};
+Physical Line("obstaculo1",5) = {5+0*nh*4:1*nh*4+4};
+Physical Line("obstaculo2",6) = {5+1*nh*4:2*nh*4+4};
+Physical Line("obstaculo3",7) = {5+2*nh*4:3*nh*4+4};
+Physical Line("obstaculo4",8) = {5+3*nh*4:4*nh*4+4};
+Physical Line("obstaculo5",9) = {5+4*nh*4:5*nh*4+4};
+Physical Line("obstaculo6",9) = {5+5*nh*4:6*nh*4+4};
+Physical Line("obstaculo7",10) = {5+6*nh*4:7*nh*4+4};
+Physical Line("obstaculo8",11) = {5+7*nh*4:8*nh*4+4};
+Physical Line("obstaculo9",12) = {5+8*nh*4:9*nh*4+4};
+Physical Line("obstaculo10",13) = {5+9*nh*4:10*nh*4+4};
 Physical Surface("surface") = {1};

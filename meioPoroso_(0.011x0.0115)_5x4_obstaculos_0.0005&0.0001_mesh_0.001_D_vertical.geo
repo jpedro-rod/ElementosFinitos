@@ -75,11 +75,12 @@ EndFor
 
 Plane Surface(1) = {1:nh*nv+1};
 //+
-Physical Line("inferior", 57)  = {1};
-Physical Line("superior", 58)  = {3,4,5};
-Physical Line("esquerda", 59)  = {6};
-Physical Line("direita", 60)   = {2};
-Physical Line("obstaculo1",61) = {7+0*nv*4:1*nv*4+6};
-Physical Line("obstaculo2",62) = {7+1*nv*4:2*nv*4+6};
-Physical Line("obstaculo3",63) = {7+2*nv*4:3*nv*4+6};
-Physical Line("obstaculo4",64) = {7+3*nv*4:4*nv*4+6};
+Physical Line("inferior", 1)  = {1};
+Physical Line("superior", 2)  = {3,4,5};
+Physical Line("esquerda", 3)  = {6};
+Physical Line("direita", 4)   = {2};
+Physical Line("obstaculo1", 5) = {7+0*nv*4:1*nv*4+6};
+Physical Line("obstaculo2", 6) = {7+1*nv*4:2*nv*4+6};
+Physical Line("obstaculo3", 7) = {7+2*nv*4:3*nv*4+6};
+Physical Line("obstaculo4", 8) = {7+3*nv*4:4*nv*4+6};
+Physical Surface("surface") = {1};
