@@ -34,8 +34,8 @@ Curve Loop(1) = {3, 4, 5, 6, 1, 2};
 
 // elipses horizontais (nh) e verticais (nv)
 count=0;counte=0;countl=2;
-For v In {0:nv-1}
- For h In {0:nh-1}
+For h In {0:nh-1}
+ For v In {0:nv-1}
   //+
   Point(7+count)  = {   xc+kh*(h),    yc+kv*(v), 0, le};  // centro da elipse
   Point(8+count)  = {xc+rh+kh*(h),    yc+kv*(v), 0, le};  // direita da elipse
@@ -61,10 +61,10 @@ Physical Line("inferior", 1)  = {1};
 Physical Line("superior", 2)  = {3,4,5};
 Physical Line("esquerda", 3)  = {6};
 Physical Line("direita", 4)   = {2};
-Physical Line("obstaculo1",5) = {7+0*nh*4:1*nh*4+6};
-Physical Line("obstaculo2",6) = {7+1*nh*4:2*nh*4+6};
-Physical Line("obstaculo3",7) = {7+2*nh*4:3*nh*4+6};
-Physical Line("obstaculo4",8) = {7+3*nh*4:4*nh*4+6};
-Physical Line("obstaculo5",9) = {7+4*nh*4:5*nh*4+6};
-Physical Line("obstaculo6",10) = {7+5*nh*4:6*nh*4+6};
+Physical Line("obstaculo1", 5) = {7+0*nv*4:1*nv*4+6};
+Physical Line("obstaculo2", 6) = {7+1*nv*4:2*nv*4+6};
+Physical Line("obstaculo3", 7) = {7+2*nv*4:3*nv*4+6};
+Physical Line("obstaculo4", 8) = {7+3*nv*4:4*nv*4+6};
+Physical Line("obstaculo5", 9) = {7+4*nv*4:5*nv*4+6};
+Physical Line("obstaculo6", 10) = {7+5*nv*4:6*nv*4+6};
 Physical Surface("surface") = {1};
