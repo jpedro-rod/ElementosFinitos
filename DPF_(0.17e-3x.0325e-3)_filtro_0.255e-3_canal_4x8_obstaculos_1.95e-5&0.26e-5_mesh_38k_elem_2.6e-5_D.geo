@@ -88,10 +88,10 @@ Plane Surface(3) = {3:countl-1}; // filtro
 //+
 
 Physical Line("admissao - lado inferior", 1)  = {1,2};
-Physical Line("admissao - lado superior", 2)  = {13,11};
+Physical Line("admissao - lado superior", 2)  = {11};
 Physical Line("admissao - esquerda", 3)  = {12};
 Physical Line("admissao - direita", 4)   = {3};
-Physical Line("exaustao - lado inferior", 5)  = {14,5};
+Physical Line("exaustao - lado inferior", 5)  = {5};
 Physical Line("exaustao - lado superior", 6)  = {7,8};
 Physical Line("exaustao - esquerda", 7)  = {9};
 Physical Line("exaustao - direita", 8)   = {6};
