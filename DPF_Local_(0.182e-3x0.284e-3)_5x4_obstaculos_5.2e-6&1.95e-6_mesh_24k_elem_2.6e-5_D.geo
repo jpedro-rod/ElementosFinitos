@@ -1,5 +1,5 @@
-lci = 0.0000065; // quinas inferiores, 13x5
-lcs = 0.0000065; // quinas superiores, 13x5
+lci = 0.0000052; // quinas inferiores, 13x4
+lcs = 0.0000052; // quinas superiores, 13x4
 le  = 0.00000195; // elipse, 13x1.5
 
 rh = 0.000013; // raio horizontal
@@ -7,7 +7,7 @@ rv = 0.000013; // raio vertical
 Dh = 2*rh; Dv = 2*rv;
 kh = 3*rh; // permeabilidade horizontal
 kv = 3*rv; // permeabilidade vertical
-xc = 2*Dh + rh; // x centro da 1a. elipse
+xc = 3*rh; // x centro da 1a. elipse
 yc = 3*rv; // y centro da 1a. elipse
 
 nh = 5; // total de obstaculos horizontais
