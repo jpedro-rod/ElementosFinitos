@@ -1,6 +1,6 @@
-lci = 0.000032; // quinas inferiores, 13x4
-lcs = 0.000032; // quinas superiores, 13x4
-le  = 0.000012; // elipse, 13x1.5
+lci = 0.000032; // quinas inferiores, 8x4
+lcs = 0.000032; // quinas superiores, 8x4
+le  = 0.000012; // elipse, 8x1.5
 
 rh = 0.00008; // raio horizontal
 rv = 0.00008; // raio vertical
